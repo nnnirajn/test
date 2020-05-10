@@ -1,0 +1,544 @@
+/*============
+PSD to HTML - PROJECT ONE
+BASIC CSS 
+=============*/
+:root{
+    --main-bg-color:#00FFAD;
+    --main-color:#192440;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*===== 
+All Animation Title Style 
+=====*/
+.animation-one {
+  -webkit-animation: rotate 15s linear infinite;
+  -moz-animation: rotate 15s linear infinite;
+  -o-animation: rotate 15s linear infinite;
+  animation: rotate 15s linear infinite; }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/*==============
+BSIC CSS END
+================*/
+/*==============
+HEADER CSS START
+================*/
+.header-section{
+    background-image: url('../img/hero-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 60px;
+    position: relative;
+}
+
+.rotating-shape-square{
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+
+.rotating-shape-circle{
+    position: absolute;
+    top: -110px;
+    left: -110px;
+}
+
+.main-logo img{
+    width: 64px;
+}
+
+.get-access{
+    text-align: right; 
+    position: relative;
+}
+
+.get-access .right-arrow {
+    clip-path: polygon(0 42%, 59% 42%, 59% 16%, 100% 50%, 59% 85%, 59% 61%, 0 61%);
+    background-color: var(--main-bg-color);
+    width: 70px;
+    height: 45px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.get-access .right-arrow:hover.right-arrow {
+	transform: translateX(5px);
+}
+
+.hero-text h2{
+    font-size: 72px;
+    font-weight: 700;
+    color: #fff;
+    margin: 48px 0px;
+}
+
+.hero-text p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 24px 0px;
+}
+
+.hero-text a:link,
+.hero-text a:visited{
+    text-decoration: none;
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
+    font-weight: 700;
+    display: inline-block;
+    border-radius: 22px;
+    padding: 12px 30px;
+    transition: all .3s ease-in-out;
+    margin: 24px 0px;
+}
+
+.hero-text a:active,
+.hero-text a:hover{
+    transform: translateY(-5px);
+}
+
+.hero-btn{
+    padding-bottom: 90px;
+}
+/*==============
+HEADER CSS END
+================*/
+/*==============
+FEATURE CSS START
+================*/
+
+.feature-section{
+    padding: 0px 0px 120px 0px;
+}
+
+.feature-section-heading h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #292B2C;
+    width: 100%;
+    text-align: center;
+    padding: 80px 0px 60px 0px; 
+}
+
+.feature-box{
+    text-align: center;
+}
+
+.feature-box img{
+	transition: all .3s ease-in-out;
+}
+
+.feature-box:hover.feature-box > img{
+	transform: translateY(-5px);
+}
+
+/*==============
+FEATURE CSS END
+================*/
+/*==============
+look-section CSS START
+================*/
+.look-section{
+    padding: 0px 0px 0px 0px;
+    background-image: linear-gradient(170deg, #ffffff 54%, #00FFAD 0)
+}
+
+.look-box-left h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #292B2C;
+}
+
+.look-box-left p{
+    font-size: 15px;
+    font-weight: 300;
+    margin: 24px 0px;
+}
+
+.look-box-left a:link,
+.look-box-left a:visited,
+.look-box-left a:active
+{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main-color);
+    font-weight: 700;
+    display: inline-block;
+    border-radius: 22px;
+    padding: 12px 30px;
+    transition: all .3s ease-in-out;
+    margin: 24px 0px;
+}
+
+.look-box-left a:hover{
+    transform: translateY(-5px);
+}
+
+.look-box-right img{
+	width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.look-box-right img:hover{
+     transform: scale(1.03);
+}
+/*==============
+look-section CSS END
+================*/
+/*==============
+look-section CSS START
+================*/
+.safe-and-reliable-section{
+    background-color:#00FFAD;
+    padding: 160px 0px 60px 0px;
+}
+
+.safe-box-right h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #292B2C;
+}
+
+.safe-box-right p{
+    font-size: 15px;
+    font-weight: 300;
+    margin: 24px 0px;
+}
+
+.safe-box-right a:link,
+.safe-box-right a:visited,
+.safe-box-right a:active
+{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main-color);
+    font-weight: 700;
+    display: inline-block;
+    border-radius: 22px;
+    padding: 12px 30px;
+    transition: all .3s ease-in-out;
+    margin: 24px 0px;
+}
+
+.safe-box-right a:hover{
+    transform: translateY(-5px);
+}
+
+.safe-box-left img{
+	width: 100%;
+    max-width: 480px;
+    transition: all 0.4s ease-in-out;
+}
+
+.safe-box-left img:hover{
+     transform: scale(1.03);
+}
+
+/*==============
+look-section CSS END
+================*/
+/*==============
+Pricing-section CSS START
+================*/
+.pricing-section{
+    padding: 60px 0px;
+}
+
+.price-heading h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #292B2C;
+    width: 100%;
+    text-align: center;
+    padding: 0px 0px 80px 0px;
+}
+
+.price-box-wrapper{
+    text-align: center;   
+}
+
+.price-box-wrapper h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.price-box-wrapper p{
+    font-weight: 700;
+}
+
+.price-box-wrapper p span{
+    font-size: 82px;
+    font-weight: 700;
+}
+
+.price-box-wrapper ul {
+    list-style: none;
+}
+
+.price-box-wrapper ul li{
+    font-weight: 300;
+    padding-bottom: 8px;
+}
+
+.price-cta-box{
+    padding-top: 20px;
+}
+
+.price-cta-box a:link,
+.price-cta-box a:visited,
+.price-cta-box a:active{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #fff;
+    border: 2px solid #192440;
+    padding: 10px 40px;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.price-cta-box a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.pricing-section .price-box{
+    padding: 60px 0px;
+}
+
+.pricing-section .price-box:nth-child(2) {
+	background-color: var(--main-color);
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.pricing-section .price-box:nth-child(2):hover{
+    transform: translateY(-5px);
+}
+
+.pricing-section .price-box:nth-child(2) a{
+    background-color: var(--main-bg-color);
+    border: 1px solid #00FFAD;
+}
+
+/*==============
+Pricing-section CSS END
+================*/
+/*==============
+Pricing-section CSS START
+================*/
+.client {
+	background-color: #ECEEEF;
+    padding: 50px 0px;
+}
+
+.client .partner-box{
+    padding: 0px 10px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.client .partner-box:hover{
+    transform: translateY(-5px);
+}
+/*==============
+Pricing-section CSS END
+================*/
+/*==============
+contact-us CSS START
+================*/
+.contact{
+    padding: 80px 0px;
+    background-image: url('../img/contact-bk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.form-box{
+    padding: 0px;
+}
+
+.contact-us-info-box h2{
+    font-weight: 700;
+    font-size: 44px;
+    color: #fff;
+}
+
+.contact-us-info-box p{
+    color: #fff;
+    padding: 30px 0px;
+    font-size: 14px;
+}
+
+.contact-us-info-box ul{
+    list-style: none;
+}
+
+.contact-us-info-box ul li{
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+
+label[for=name],
+label[for=mail],
+label[for=msg]{
+    color: #00FFAD;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
+
+
+input[type="text"],
+input[type="mail"],
+textarea{
+    background-color: transparent;
+    border: 1px solid #00FFAD;
+    border-radius: 5px;
+    padding: 1px 8px;
+    color: #00FFAD;
+    letter-spacing: 1px;
+}
+
+input[type="text"]{
+    width: 90%; 
+    height: 33px;
+}
+
+input[type="mail"]{
+    width: 100%;
+    height: 33px;
+}
+
+.contact-form-box{
+    text-align: center;
+}
+
+.contact-form-box a{
+    text-decoration: none;
+    color: #192440;
+    background-color: var(--main-bg-color);
+    display: block;
+    border-radius: 30px;
+    padding: 10px 0px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form-box a:hover{
+    transform: translateY(-5px);
+}
+
+.msg-box{
+    padding: 30px 0px 40px 0px;
+}
+/*==============
+CONTACT US CSS END
+================*/
+/*==============
+FOOTER CSS START
+================*/
+.footer-section{
+    padding: 60px 0px 30px 0px;
+    background-color: #192440;
+}
+
+.copyright p{
+    color: #fff;
+}
+
+.social-icon ul{
+    list-style: none;
+    text-align: right;
+}
+
+.social-icon ul li{
+    display: inline;
+    padding: 0px 5px;
+}
+
+
+.social-icon ul li a{
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    padding: 4px 11px 0px 0px;
+    border-radius: 50%;
+    color: #000;
+    font-size: 22px;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.social-icon ul li a:hover{
+    background-color: #00FFAD;
+}
+
+#fb{
+    padding: 4px 13px 0px 0px;
+}
+/*==============
+FOOTER CSS END
+================*/
+
+/*==============
+LOWER FOOTER CSS START
+================*/
+.lower-footer{
+    padding: 20px 0px 8px 0px;
+    background-color: #000;
+}
+
+.lower-footer h4{
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+#creator{
+    color:#00FFAD; 
+}
+
+#creator a{
+    color: #00FFAD;
+    text-decoration: none;
+}
+/*==============
+UPPER FOOTER CSS END
+================*/
+    
+
